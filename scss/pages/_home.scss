@@ -1,0 +1,55 @@
+.home {
+    background-color: #99cccc;
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.home-title {
+    color: #ffffff;
+    font-size: 5em;
+    padding: 9rem 0 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.home-title__first-name {
+    font-weight: normal;
+}
+
+.home-title__last-name {
+    font-family: $main-font-bold;
+    font-weight: bold;
+}
+
+.home-subtitle {
+    color: #ffffff;
+    font-size: 2.6em;
+    font-weight: normal;
+    letter-spacing: 2rem;
+    text-align: center;
+    text-indent: 2rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.dots-wrapper {
+    margin: 10rem auto;
+    transform: rotate(180deg);
+    height: 30vh;
+}
+
+.dots-wrapper svg {
+    animation: hopping 2.5s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@keyframes hopping {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

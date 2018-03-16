@@ -1,0 +1,66 @@
+/*----------------------------------------------------------*\
+    #GLOBAL-SETTINGS
+\*----------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-family: $main-font-regular;
+    font-size: 62.5%;
+    min-height: 500vh;
+    height: 100%;
+  }
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  button {
+      border: none;
+      background-color: transparent;
+  }
+
+  button:focus {
+    outline:0;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+  }
+
+  svg {
+      height: 100%;
+      width: 100%;
+  }
+
+  .content-wrapper {
+      position: relative;
+      height: 100%;
+  }
+
+  .bucket {
+      font-size: 1.6rem;
+      position: relative;
+  }
+
+    .container {
+        max-width: 1024px;
+        margin: auto;
+        padding: 20px;
+    
+    
+        @include for-desktop-up {
+            padding: 50px;
+        }
+    }
